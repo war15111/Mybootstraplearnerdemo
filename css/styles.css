@@ -93,7 +93,7 @@ footer a:hover {
     color: #000;
 }
 #googleMap {
-    width: 100%; /* Span the entire width of the screen */
+    width: 1000; /* forcing for now. If live, will change back to 100% instead. */
     height: 400px; /* Set the height to 400 pixels */
     -webkit-filter: grayscale(100%);
     filter: grayscale(100%); /* Change the color of the map to black and white */
@@ -105,4 +105,14 @@ footer a:hover {
     border: 1px solid #333;
     background-color: #000;
     color: #fff;
+}
+/* modal settings */
+.modal-header, h4, .close {
+    background-color: #333;
+    color: #fff !important;
+    text-align: center;
+    font-size: 30px;
+}
+.modal-header, .modal-body {
+    padding: 40px 50px;
 }

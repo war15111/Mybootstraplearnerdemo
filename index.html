@@ -1,4 +1,6 @@
 <!DOCTYPE html>
+<!-- Webpage design by Warren Capps -->
+<!-- All photos copyright Warren Capps except three photos used for buttons. Imperial Logo is Copywright IL&M and is used without permission -->
 <html lang="en">
 <head>
 <title>Welcome to my Life.</title>
@@ -33,10 +35,10 @@
         <li><a href="#contact">CONTACT</a></li>
         <li class="dropdown"> <a class="dropdown-toggle" data-toggle="dropdown" href="#">MORE <span class="caret"></span> </a>
           <ul class="dropdown-menu">
-            <li><a href="#">Buy a Print</a></li>
-            <li><a href="#">Buy me Something</a></li>
-            <li><a href="#">Buy a car</a></li>
-            <li><a href="#">Watch a Video</a></li>
+            <li><a href="photos.html">Buy a Print</a></li>
+            <li><a href="https://www.amazon.com" target="_blank">Buy me Something</a></li>
+            <li><a href="https://www.tesla.com/models/design" target="_blank">Buy me a car</a></li>
+            <li><a href="https://www.youtube.com/watch?v=TmBUAtfvlaY" target="_blank">Watch a Video</a></li>
           </ul>
         </li>
       </ul>
@@ -48,16 +50,18 @@
 
 <div class="background-1">
   <div class="container">
-    <h3 >ABOUT ME</h3>
-    <p text-center>This is a short synopsis about me, Warren. If you want to know more click the <span class="label label-primary">buttons!</span></p>
-    <!-- yes. Blue is a horrible color for this --> 
+    <div class="row text-center">
+      <h3 >ABOUT ME</h3>
+      <p text-center>This is a short synopsis about me, Warren. If you want to know more click the <span class="label label-primary">buttons!</span></p>
+      <!-- yes. Blue is a horrible color for this --> 
+    </div>
   </div>
   <div class="row text-center">
     <div class="col-sm-4">
       <div class="thumbnail"> <img src="images/Game_Design.jpg" alt="Game_D">
         <h3><strong>GAME DESIGN</strong></h3>
         <p>For 18 years now I have been making Video Games.</p>
-        <a href="games.html" class="btn btn-default">See My Games</a> </div>
+        <a href="games.html" class="btn btn-default">See My Games</a> <a class="btn" data-toggle="modal" data-target="#myModal">Need a Designer?</a> </div>
     </div>
     <div class="col-sm-4">
       <div class="thumbnail"> <img src="images/Photog.jpg" alt="Photo_B">
@@ -70,6 +74,40 @@
         <h3><strong>IMPERIAL LEGION</strong></h3>
         <p>I am a member of the 501<sup>st</sup> imperial legion.</p>
         <a href="https://www.501st.com/" target="_blank" class="btn btn-default">Join the Legion</a> </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="myModal" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4><span class="glyphicon glyphicon-blackboard">Contract Game Design</span></h4>
+      </div>
+      <div class="modal-body">
+        <form role="form">
+          <div class="form-group">
+            <label for="psw"><span class="glyphicon glyphicon-pencil"></span>Your Name</label>
+            <input type="text" class="form-control" id="psw" placeholder="Name">
+          </div>
+          <div class="form-group">
+            <label for="usrname"><span class="glyphicon glyphicon-envelope"></span>Email</label>
+            <input type="text" class="form-control" id="usrname" placeholder="Enter email">
+          </div>
+          <div class="form-group">
+            <label for="destask"><span class="glyphicon glyphicon-blackboard"></span>Design Task</label>
+            <textarea class="form-control" id="designTask" placeholder="Enter a brief description of what you need designed." rows="5"></textarea>
+          </div>
+          <button type="submit" class="btn btn-block">Submit<span class="glyphicon glyphicon-ok"></span></button>
+          <p><em>I will be in touch with you within 24-48 hours after your submission.</em></p>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="submit" class="btn btn-danger btn-default pull-left" data-dimiss="modal"> <!-- Cancel button not working. Can still close by clicking outside modal, but not optimal. --> 
+        <span class="glyphicon glyphicon-remove">Cancel</span> </button>
+        <p>Need <a href="#>">Help?</a></p>
+        <!-- Missing Link --> 
+      </div>
     </div>
   </div>
 </div>
@@ -139,20 +177,13 @@
       <p><span class="glyphicon glyphicon-map-marker"></span>Somewhere Near Chicago</p>
       <p><span class="glyphicon glyphicon-phone"></span>+1 111-222-3471</p>
       <p><span class="glyphicon glyphicon-envelope"></span>Email: email@email.email</p>
-          
-     
-        <div class="row text-center">
-          <div class="col-xs-3 text-center"> <a><i class="fa fa-2x fa-fw fa-instagram"></i></a>
-           </div>
-          <div class="col-xs-3"> <a><i class="fa fa-2x fa-fw fa-twitter"></i></a>
-           </div>
-          <div class="col-xs-3"> <a><i class="fa fa-2x fa-fw fa-facebook"></i></a>
-           </div>
-          <div class="col-xs-3 text-center"> <a><i class="fa fa-2x fa-fw fa-github"></i></a>
-           </div>
-        </div>
+      <div class="row text-center">
+        <div class="col-xs-3 text-center"> <a><i class="fa fa-2x fa-fw fa-instagram"></i></a> </div>
+        <div class="col-xs-3"> <a><i class="fa fa-2x fa-fw fa-twitter"></i></a> </div>
+        <div class="col-xs-3"> <a><i class="fa fa-2x fa-fw fa-facebook"></i></a> </div>
+        <div class="col-xs-3 text-center"> <a><i class="fa fa-2x fa-fw fa-github"></i></a> </div>
+      </div>
     </div>
-
     <div class="col-md-8">
       <div class="row">
         <div class="col-sm-6 form-group">
@@ -169,22 +200,28 @@
         </div>
       </div>
     </div>
-
   </div>
 </div>
 
-<!-- because I love playing with maps -->
-<div id="myMap>"> 
-  <script>
-		function myMap(){
-			var myCenter = new google.maps.LatLng(41.878114, -87.629798);
-			var mapProp = {center:myCenter, zoom:12, scrollwheel:false, draggable:false, mapTypeId:google.maps.MapTypeId.ROADMAP};
-			var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
-			var marker = new google.maps.Marker({position:myCenter});
-			marker.setMap(map);
-		}
-	</script> 
-  <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap"></script> 
+<!-- not currently working. Window is present, but since not live cannot show. -->
+<div class="background-1">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-1">
+        <div id="googleMap"></div>
+        <script>
+			function myMap() {
+				var myCenter = new google.maps.LatLng(41.878114, -87.629798);
+				var mapProp = {center:myCenter, zoom:12, scrollwheel:false, draggable:false, mapTypeId:google.maps.MapTypeId.ROADMAP};
+				var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+				var marker = new google.maps.Marker({position:myCenter});
+				marker.setMap(map);
+			}
+		  </script> 
+          <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap"></script> 
+      </div>
+    </div>
+  </div>
 </div>
 
 <!-- FOoter --> 
@@ -192,7 +229,7 @@
 
 <footer class="text-center"> <a class="up-arrow" href="#" data-toggle="tooltip" title="TO TOP"> <span class="glyphicon glyphicon-chevron-up"></span> </a><br>
   <br>
-  <p>This page was made by Warren Capps using <a href="https://www.getbootstrap.com" data-toggle="tooltip" title="Get Bootstrap">BootStrap</a></p>
+  <p>This page was made by Warren Capps using <a href="https://www.getbootstrap.com" target="_blank" data-toggle="tooltip" title="Get Bootstrap">BootStrap</a></p>
 </footer>
 </body>
 </html>
